@@ -1,50 +1,304 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito | Mapa de navegación</title>
-  <link rel="stylesheet" href="../styles/main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito de Compras | NexusPlay</title>
+<link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-  <main class="site">
-    <header class="hero">
-      <p class="eyebrow">Sección separada</p>
-      <h1>Carrito</h1>
-      <p class="lead">Esta rama separa la revisión de artículos del cierre del proceso de compra.</p>
-    </header>
 
-    <section class="page-shell">
-      <aside class="panel sidebar-panel">
-        <h2>Ruta</h2>
-        <ul class="tree">
-          <li>
-            <a class="node" href="../index.html">Inicio</a>
-            <ul>
-              <li><span class="node node-root">Carrito</span></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="back-link" href="../index.html">Volver al inicio</a>
-      </aside>
+<div class="announce">⚡ Venta de Verano: hasta 70% OFF en claves seleccionadas · Termina en 3 días</div>
 
-      <section class="panel page-content" aria-label="Contenido del carrito">
-        <p class="breadcrumb">Inicio / Carrito</p>
-        <h2>Proceso de compra</h2>
-        <p>Separar estas dos vistas permite explicar la navegación entre revisión de pedido y confirmación.</p>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="../index.html" class="brand">
+      <span class="mark">🎮</span>
+      <span>NexusPlay<small>KEY MARKETPLACE</small></span>
+    </a>
 
-        <div class="branch-grid">
-          <articlhref="pages/productos.html"e class="card" id="resumen">
-            <h3>Resumen</h3>
-            <p>Reúne los productos seleccionados, cantidades y total estimado antes de pagar.</p>
-          </article>
-          <article class="card" id="checkout">
-            <h3>Checkout</h3>
-            <p>Contiene el formulario de envío, facturación y confirmación final de la compra.</p>
-          </article>
+    <ul class="main-nav">
+      <li><a href="../index.html" class="nav-link">Inicio</a></li>
+      <li class="has-dropdown">
+        <a href="productos.html" class="nav-link">
+          Catálogo
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="productos.html#rpg">RPG y Mundo Abierto<span class="sub-desc">Aventuras épicas y narrativas extensas</span></a>
+          <a href="productos.html#accion">Acción y Aventura<span class="sub-desc">Combate, terror y adrenalina</span></a>
+          <a href="productos.html#deportes">Deportes y Carreras<span class="sub-desc">Simuladores y velocidad</span></a>
+          <a href="productos.html#indie">Sandbox e Indie<span class="sub-desc">Creatividad y experiencias únicas</span></a>
+          <a href="productos.html#ofertas">Ofertas de la Semana<span class="sub-desc">Descuentos por tiempo limitado</span></a>
         </div>
-      </section>
-    </section>
-  </main>
+      </li>
+      <li><a href="carrito.html" class="nav-link is-active">Carrito</a></li>
+      <li class="has-dropdown">
+        <a href="perfil.html" class="nav-link">
+          Mi Cuenta <span class="lock-tag">🔒</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="perfil.html#mis-compras">Mis Compras y Claves<span class="sub-desc">Historial y códigos adquiridos</span></a>
+          <a href="perfil.html#lista-deseos">Lista de Deseos<span class="sub-desc">Guarda juegos para después</span></a>
+          <a href="perfil.html#configuracion">Configuración de Perfil<span class="sub-desc">Datos personales y seguridad</span></a>
+        </div>
+      </li>
+      <li class="has-dropdown">
+        <a href="soporte.html" class="nav-link">
+          Soporte
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="soporte.html#faq">Preguntas Frecuentes<span class="sub-desc">Respuestas inmediatas sin esperar</span></a>
+          <a href="soporte.html#ayuda">Centro de Ayuda <span class="lock-tag">🔒</span><span class="sub-desc">Tickets de soporte personalizado</span></a>
+          <a href="soporte.html#contacto">Contacto<span class="sub-desc">Escríbenos directamente</span></a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="perfil.html" class="btn btn-ghost btn-sm">Iniciar sesión</a>
+      <a href="carrito.html" class="icon-btn" aria-label="Ver carrito">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+        <span class="badge-count">3</span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer">
+  <div class="drawer-panel">
+    <button class="drawer-close icon-btn" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <ul class="main-nav">
+      <li><a href="../index.html" class="nav-link">Inicio</a></li>
+      <li class="has-dropdown">
+        <a href="productos.html" class="nav-link">Catálogo</a>
+        <div class="dropdown">
+          <a href="productos.html#rpg">RPG y Mundo Abierto</a>
+          <a href="productos.html#accion">Acción y Aventura</a>
+          <a href="productos.html#deportes">Deportes y Carreras</a>
+          <a href="productos.html#indie">Sandbox e Indie</a>
+          <a href="productos.html#ofertas">Ofertas de la Semana</a>
+        </div>
+      </li>
+      <li><a href="carrito.html" class="nav-link is-active">Carrito</a></li>
+      <li class="has-dropdown">
+        <a href="perfil.html" class="nav-link">Mi Cuenta 🔒</a>
+        <div class="dropdown">
+          <a href="perfil.html#mis-compras">Mis Compras y Claves</a>
+          <a href="perfil.html#lista-deseos">Lista de Deseos</a>
+          <a href="perfil.html#configuracion">Configuración de Perfil</a>
+        </div>
+      </li>
+      <li class="has-dropdown">
+        <a href="soporte.html" class="nav-link">Soporte</a>
+        <div class="dropdown">
+          <a href="soporte.html#faq">Preguntas Frecuentes</a>
+          <a href="soporte.html#ayuda">Centro de Ayuda 🔒</a>
+          <a href="soporte.html#contacto">Contacto</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="breadcrumb-bar">
+  <div class="wrap breadcrumb">
+    <a href="../index.html">Inicio</a><span class="sep">/</span><span class="current">Carrito</span>
+  </div>
+</div>
+
+<main>
+  <div class="page-header wrap">
+    <span class="eyebrow"><span class="dot"></span> 3 productos en tu carrito</span>
+    <h1>Tu carrito</h1>
+    <p>Revisa tus claves antes de continuar. Puedes editar cantidades o eliminar productos en cualquier momento.</p>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+
+      <div id="resumen" class="checkout-steps">
+        <div class="step is-active">1. Resumen del carrito</div>
+        <div class="step" id="checkout">2. Datos y pago</div>
+        <div class="step">3. Confirmación</div>
+      </div>
+
+      <div class="cart-layout">
+
+        <div class="cart-list">
+
+          <div class="cart-item" data-unit-price="29.99">
+            <img src="../images/eldenring.jpg" alt="Elden Ring">
+            <div>
+              <h4>Elden Ring</h4>
+              <span class="plat">PC · Steam Key</span><br>
+              <a href="#" class="remove-x">Eliminar</a>
+            </div>
+            <div class="qty-control">
+              <button class="qty-minus" aria-label="Reducir cantidad">−</button>
+              <span class="qty-display">1</span>
+              <button class="qty-plus" aria-label="Aumentar cantidad">+</button>
+            </div>
+            <span class="line-price">$29.99</span>
+          </div>
+
+          <div class="cart-item" data-unit-price="54.99">
+            <img src="../images/baldursgate.jpg" alt="Baldur's Gate 3">
+            <div>
+              <h4>Baldur's Gate 3</h4>
+              <span class="plat">PC · Steam Key</span><br>
+              <a href="#" class="remove-x">Eliminar</a>
+            </div>
+            <div class="qty-control">
+              <button class="qty-minus" aria-label="Reducir cantidad">−</button>
+              <span class="qty-display">1</span>
+              <button class="qty-plus" aria-label="Aumentar cantidad">+</button>
+            </div>
+            <span class="line-price">$54.99</span>
+          </div>
+
+          <div class="cart-item" data-unit-price="19.99">
+            <img src="../images/godofwar.jpg" alt="God of War">
+            <div>
+              <h4>God of War</h4>
+              <span class="plat">PC · Steam Key</span><br>
+              <a href="#" class="remove-x">Eliminar</a>
+            </div>
+            <div class="qty-control">
+              <button class="qty-minus" aria-label="Reducir cantidad">−</button>
+              <span class="qty-display">1</span>
+              <button class="qty-plus" aria-label="Aumentar cantidad">+</button>
+            </div>
+            <span class="line-price">$19.99</span>
+          </div>
+
+          <a href="productos.html" class="btn btn-ghost" style="margin-top:10px;">← Seguir comprando</a>
+        </div>
+
+        <aside class="summary-box">
+          <h3>Resumen de pedido</h3>
+          <div class="summary-row"><span>Subtotal</span><span data-summary="subtotal">$104.97</span></div>
+          <div class="summary-row"><span>Impuestos</span><span>Incluidos</span></div>
+          <div class="promo-row">
+            <input type="text" placeholder="Código de descuento">
+            <button class="btn btn-ghost btn-sm">Aplicar</button>
+          </div>
+          <div class="summary-row total"><span>Total</span><span data-summary="total">$104.97</span></div>
+
+          <div class="auth-notice" style="margin: 18px 0 0; padding: 14px 16px;">
+            <div class="icon" style="width:30px;height:30px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+            <div>
+              <h4 style="font-size:0.85rem;">Inicia sesión para continuar</h4>
+              <p style="font-size:0.8rem;">El paso de pago y confirmación requiere una cuenta NexusPlay. <a href="perfil.html">Inicia sesión aquí</a>.</p>
+            </div>
+          </div>
+
+          <a href="perfil.html" class="btn btn-primary btn-block" style="margin-top:16px;">Iniciar sesión para pagar 🔒</a>
+        </aside>
+      </div>
+
+      <div class="section-tight">
+        <div class="content-panel" style="margin-top: 20px; position: relative;">
+          <div class="auth-notice">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+            <div>
+              <h4>Esta sección requiere autenticación 🔒</h4>
+              <p>Para completar el checkout (datos de envío de la clave, facturación y confirmación) debes <a href="perfil.html">iniciar sesión o crear una cuenta</a>. Lo que ves abajo es una vista previa del formulario.</p>
+            </div>
+          </div>
+
+          <h2>Datos y pago</h2>
+          <p class="panel-desc">Completa la información para recibir tu clave en el correo asociado a tu cuenta.</p>
+
+          <form class="form-grid" onsubmit="event.preventDefault();">
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Correo electrónico</label>
+                <input id="email" type="email" placeholder="tucorreo@email.com" disabled>
+              </div>
+              <div class="field">
+                <label for="pais">País de facturación</label>
+                <select id="pais" disabled>
+                  <option>Ecuador</option>
+                  <option>Perú</option>
+                  <option>Colombia</option>
+                  <option>México</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="tarjeta">Número de tarjeta</label>
+                <input id="tarjeta" type="text" placeholder="•••• •••• •••• ••••" disabled>
+              </div>
+              <div class="field">
+                <label for="venc">Vencimiento</label>
+                <input id="venc" type="text" placeholder="MM/AA" disabled>
+              </div>
+            </div>
+            <button class="btn btn-primary" disabled style="opacity:0.5;">Confirmar compra (requiere sesión)</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand"><span class="mark">🎮</span><span>NexusPlay</span></a>
+        <p>El marketplace de claves digitales hecho por jugadores, para jugadores.</p>
+        <div class="footer-social">
+          <a href="#" class="icon-btn" aria-label="Discord">D</a>
+          <a href="#" class="icon-btn" aria-label="X / Twitter">X</a>
+          <a href="#" class="icon-btn" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+      <div>
+        <h4>Catálogo</h4>
+        <ul>
+          <li><a href="productos.html#rpg">RPG y Mundo Abierto</a></li>
+          <li><a href="productos.html#accion">Acción y Aventura</a></li>
+          <li><a href="productos.html#deportes">Deportes y Carreras</a></li>
+          <li><a href="productos.html#indie">Sandbox e Indie</a></li>
+          <li><a href="productos.html#ofertas">Ofertas de la Semana</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Mi cuenta</h4>
+        <ul>
+          <li><a href="perfil.html#mis-compras">Mis Compras y Claves</a></li>
+          <li><a href="perfil.html#lista-deseos">Lista de Deseos</a></li>
+          <li><a href="perfil.html#configuracion">Configuración</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Soporte</h4>
+        <ul>
+          <li><a href="soporte.html#faq">Preguntas Frecuentes</a></li>
+          <li><a href="soporte.html#ayuda">Centro de Ayuda</a></li>
+          <li><a href="soporte.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NexusPlay. Proyecto académico — Diseño Web, 1er ciclo.</span>
+      <span>Todas las marcas y juegos mencionados pertenecen a sus respectivos estudios y editoras.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
 </body>
 </html>
